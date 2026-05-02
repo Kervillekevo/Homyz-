@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap');
+
+.properties-page {
+  font-family: "Manrope", sans-serif;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.properties-hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 80px 5rem 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.properties-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.properties-hero h1 em {
+  font-style: italic;
+  background: linear-gradient(135deg, #b48c4f, #a57a3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.properties-hero p {
+  color: rgba(255,255,255,0.65);
+  font-size: 16px;
+}
+
+.properties-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.filters-sidebar {
+  background: #fff;
+  border: 1px solid rgba(15,23,42,0.08);
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 20px rgba(15,23,42,0.06);
+  position: sticky;
+  top: 90px;
+}
+
+.filters-sidebar h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.filter-group label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 10px 12px;
+  border: 1.5px solid rgba(15,23,42,0.1);
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #0f172a;
+  background: #f8fafc;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  border-color: #b48c4f;
+}
+
+.filter-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #b48c4f, #a57a3f);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover { transform: translateY(-2px); }
+
+.filter-clear-btn {
+  width: 100%;
+  background: transparent;
+  color: #64748b;
+  border: 1px solid rgba(15,23,42,0.1);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+
+.filter-clear-btn:hover { color: #0f172a; border-color: #0f172a; }
+
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.prop-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(15,23,42,0.08);
+  box-shadow: 0 4px 16px rgba(15,23,42,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prop-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(15,23,42,0.14);
+}
+
+.prop-img-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.prop-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.prop-card:hover .prop-img-wrap img { transform: scale(1.06); }
+
+.prop-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #b48c4f, #a57a3f);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.prop-featured {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(15,23,42,0.75);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.prop-body { padding: 20px; }
+
+.prop-price {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #b48c4f;
+  margin-bottom: 6px;
+}
+
+.prop-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.prop-location {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.prop-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.props-loading,
+.props-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+@media (max-width: 960px) {
+  .properties-container { grid-template-columns: 1fr; }
+  .filters-sidebar { position: static; }
+  .properties-hero { padding: 80px 2rem 50px; }
+}
+
+@media (max-width: 480px) {
+  .properties-hero h1 { font-size: 2rem; }
+}

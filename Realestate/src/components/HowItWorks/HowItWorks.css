@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap');
+
+.hiw-section {
+  background: #fff;
+  padding: 6rem 5rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.hiw-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hiw-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hiw-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #b48c4f;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hiw-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.hiw-header h2 em {
+  font-style: italic;
+  background: linear-gradient(135deg, #b48c4f, #a57a3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hiw-header p {
+  font-size: 15px;
+  color: #64748b;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.hiw-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+.hiw-step {
+  background: #f8fafc;
+  border: 1px solid rgba(15,23,42,0.08);
+  border-radius: 20px;
+  padding: 28px 22px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.hiw-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(15,23,42,0.1);
+  border-color: rgba(180,140,79,0.3);
+}
+
+.hiw-step-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hiw-number {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(15,23,42,0.07);
+  line-height: 1;
+}
+
+.hiw-icon-wrap {
+  width: 48px;
+  height: 48px;
+  background: rgba(180,140,79,0.1);
+  border: 1px solid rgba(180,140,79,0.25);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.hiw-step h3 {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.hiw-step p {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+@media (max-width: 960px) {
+  .hiw-section { padding: 5rem 3rem; }
+  .hiw-steps { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+  .hiw-section { padding: 4rem 1.5rem; }
+  .hiw-steps { grid-template-columns: 1fr; }
+  .hiw-header h2 { font-size: 2rem; }
+}
