@@ -23,7 +23,7 @@ const steps = [
     number: "04",
     icon: "🔑",
     title: "Close the Deal",
-    desc: "Finalize the paperwork with full transparency. No hidden charges, no surprises — just your new home.",
+    desc: "Finalize the paperwork with full transparency. No hidden charges, no surprises just your new home.",
   },
 ];
 
