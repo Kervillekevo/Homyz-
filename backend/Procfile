@@ -1,0 +1,1 @@
+web: gunicorn Homyz.wsgi:application
